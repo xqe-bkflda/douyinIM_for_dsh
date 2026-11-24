@@ -1,0 +1,42 @@
+{
+  "name": "local-douyin-im",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "main": "lib/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "抖音IM 代聊",
+      "en": "DouyinIM for DSH"
+    },
+    "icon": "chat",
+    "wants": [],
+    "contributes": {
+      "panels": [
+        {
+          "id": "douim",
+          "title": {
+            "zh": "抖IM",
+            "en": "DouIM"
+          },
+          "icon": "chat",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        }
+      ]
+    }
+  },
+  "description": "让抖音私信接上 DSH 代聊。需要配合抖IM App 使用：https://github.com/xqe-bkflda/douim"
+}
